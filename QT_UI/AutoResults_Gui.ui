@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>427</width>
-    <height>395</height>
+    <width>410</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>50</y>
+     <y>40</y>
      <width>391</width>
-     <height>121</height>
+     <height>101</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -28,7 +28,7 @@
       <property name="title">
        <string>Parameters to check</string>
       </property>
-      <widget class="QCheckBox" name="checkBox_appVer_2">
+      <widget class="QCheckBox" name="checkBox_appVer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -41,7 +41,7 @@
         <string>Application ver</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_biosVer_2">
+      <widget class="QCheckBox" name="checkBox_biosVer">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -54,7 +54,7 @@
         <string>BIOS Ver</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_CPU_2">
+      <widget class="QCheckBox" name="checkBox_cpu">
        <property name="geometry">
         <rect>
          <x>230</x>
@@ -67,7 +67,7 @@
         <string>CPU</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_BSP_2">
+      <widget class="QCheckBox" name="checkBox_bsp">
        <property name="geometry">
         <rect>
          <x>290</x>
@@ -80,7 +80,7 @@
         <string>BSP ver</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_ndVer_2">
+      <widget class="QCheckBox" name="checkBox_ndVer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -93,7 +93,7 @@
         <string>Network Driver ver</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_2">
+      <widget class="QCheckBox" name="checkBox_memConf">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -106,7 +106,7 @@
         <string>Memory config</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_mac_2">
+      <widget class="QCheckBox" name="checkBox_mac">
        <property name="geometry">
         <rect>
          <x>260</x>
@@ -127,9 +127,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>170</y>
+     <y>150</y>
      <width>341</width>
-     <height>171</height>
+     <height>181</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -138,7 +138,7 @@
       <property name="title">
        <string>Results</string>
       </property>
-      <widget class="QLabel" name="label_applVer_2">
+      <widget class="QLabel" name="label_applVer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -156,7 +156,7 @@
         <string>Application version: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_biosVer_2">
+      <widget class="QLabel" name="label_biosVer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -174,7 +174,7 @@
         <string>BIOS version: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_CPU_2">
+      <widget class="QLabel" name="label_cpu">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -192,7 +192,7 @@
         <string>CPU: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_BSP_2">
+      <widget class="QLabel" name="label_bsp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -210,7 +210,7 @@
         <string>BSP version: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_ndVer_2">
+      <widget class="QLabel" name="label_ndVer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -228,7 +228,7 @@
         <string>Network Driver version: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_ramConfig_2">
+      <widget class="QLabel" name="label_ramConfig">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -246,7 +246,7 @@
         <string>Memory Configuration: Unknown</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_mac_2">
+      <widget class="QLabel" name="label_mac">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -273,13 +273,13 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>287</width>
+     <width>389</width>
      <height>22</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
-     <widget class="QLabel" name="label_platform_2">
+     <widget class="QLabel" name="label_platform">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -291,7 +291,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="cb_platforms_2">
+     <widget class="QComboBox" name="cb_platforms">
       <item>
        <property name="text">
         <string>ODSMR</string>
@@ -325,7 +325,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_app_2">
+     <widget class="QLabel" name="label_app">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -337,7 +337,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="cb_application">
       <item>
        <property name="text">
         <string>Alteon</string>
@@ -355,20 +355,30 @@
       </item>
      </widget>
     </item>
+    <item>
+     <widget class="QLabel" name="label_com">
+      <property name="text">
+       <string>Com</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_com"/>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>350</y>
+     <y>340</y>
      <width>239</width>
      <height>25</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="2">
-     <widget class="QPushButton" name="pushButton_exit_2">
+     <widget class="QPushButton" name="pushButton_exit">
       <property name="text">
        <string>Exit</string>
       </property>
@@ -378,7 +388,7 @@
      </widget>
     </item>
     <item row="0" column="0">
-     <widget class="QPushButton" name="pushButton_saveResults_2">
+     <widget class="QPushButton" name="pushButton_saveResults">
       <property name="text">
        <string>Save Results</string>
       </property>
@@ -388,7 +398,7 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QPushButton" name="pushButton_start_2">
+     <widget class="QPushButton" name="pushButton_start">
       <property name="text">
        <string>Start</string>
       </property>
