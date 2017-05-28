@@ -8,11 +8,19 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+from PyQt4.QtCore import QStringList
+
 import Main, sys, time, threading, switch, serial.tools.list_ports
 
 result_path = 'C:\\python\\AutoResults\\results\\'
 cap_path = 'C:\\python\\AutoResults\\capture\\capture1.txt'
 list = serial.tools.list_ports.comports()
+sorted_list = []
+for l in list:
+    sorted_list.append(l.device)
+
+sorted_list.sort()
+
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -211,8 +219,9 @@ class Ui_Dialog(QtGui.QWidget):
         self.pushButton_exit.setText(_translate("AutoResult_Form", "Exit", None))
         self.pushButton_saveResults.setText(_translate("AutoResult_Form", "Save Results", None))
         self.pushButton_start.setText(_translate("AutoResult_Form", "Start", None))
-        self.cb_com.clear()
-        self.cb_com.addItems(list)
+        for i in sorted_list:
+            self.cb_com.addItem(i)
+
 
         ####coding for buttons
         self.pushButton_exit.clicked.connect(self.exit_chosen)
