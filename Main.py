@@ -79,7 +79,7 @@ except AttributeError:
             time.sleep(3)
         except:
             print 'cant open capture file'
-        return 0;
+        return 0
 
 
     ########get the Device info from power up######
