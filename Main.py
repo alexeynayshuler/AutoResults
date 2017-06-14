@@ -33,7 +33,7 @@ except AttributeError:
         else:
             ser.baudrate = '19200'
 
-        ser.port = str('COM' + ex.lineEdit_COM.text())
+        ser.port = str('COM' + ex.cb_com.currentText())
         ser.timeout = 1
         # ser.port = str(com_info[0])
         ser.open()

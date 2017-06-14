@@ -219,7 +219,7 @@ class Ui_Dialog(QtGui.QWidget):
         self.pushButton_saveResults.setText(_translate("AutoResult_Form", "Save Results", None))
         self.pushButton_start.setText(_translate("AutoResult_Form", "Start", None))
         for i in sorted_list:
-            self.cb_com.addItem(i)
+            self.cb_com.addItem(i[3])
 
 
         ####coding for buttons
@@ -243,7 +243,7 @@ class Ui_Dialog(QtGui.QWidget):
 
         for case in switch.switch(app_triger):
             if case('Alteon'):
-                print('This is Alteon')
+                ser_sent = Main.openSerial()
                 break
             if case('DefensePro'):
                 print('This is DefensePro')
